@@ -27,7 +27,7 @@ class RestaurantRepository(client: MongoClient): Repository<Restaurant> {
             val info = PagingInfo(totalDesserts.toInt(), totalPages.toInt(), next, prev)
             return RestaurantPage(results, info)
         }catch (t: Throwable){
-            throw Exception("Can't get desserts page")
+            throw Exception("Can't get restaurants page")
         }
     }
 
