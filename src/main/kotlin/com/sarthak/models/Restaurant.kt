@@ -5,7 +5,8 @@ data class Restaurant(
     var userId: String,
     var name: String,
     var description: String,
-    var imageUrl: String
+    var imageUrl: String,
+    var reviews: List<Review> = emptyList()
 ) : Model
 
 data class RestaurantInput(
